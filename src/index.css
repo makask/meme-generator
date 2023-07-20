@@ -36,3 +36,30 @@ body {
 .trollface-img {
   width: 100px;
 }
+
+.form {
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr;
+  gap: 20px;
+}
+
+.form-input {
+  border-radius: 5px;
+  border: 2px solid rgb(209, 208, 208);
+}
+
+.form-button {
+  grid-column: 1 / -1;
+  border-radius: 5px;
+  border: none;
+  background: linear-gradient(
+    90deg,
+    rgba(50, 24, 59, 1) 9%,
+    rgba(187, 86, 212, 1) 100%,
+    rgba(101, 30, 159, 1) 100%
+  );
+  color: white;
+  font-size: 1.2rem;
+  height: 3rem;
+  cursor: pointer;
+}

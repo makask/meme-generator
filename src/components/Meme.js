@@ -17,6 +17,8 @@ function Meme() {
     });
   }
 
+  function getMemeImage() {}
+
   return (
     <main>
       <div className="form">
@@ -36,6 +38,9 @@ function Meme() {
           value={meme.bottomText}
           onChange={handleChange}
         />
+        <button onClick={getMemeImage} className="form-button">
+          Get new meme image 🖼
+        </button>
       </div>
     </main>
   );
